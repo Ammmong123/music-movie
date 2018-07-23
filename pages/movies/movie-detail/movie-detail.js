@@ -56,6 +56,14 @@ Page({
         })
     },
 
+    viewMoviePostImg: function (e) {
+        var src = e.currentTarget.dataset.src;
+        wx.previewImage({
+            current: src, // 当前显示图片的http链接
+            urls: [src] // 需要预览的图片http链接列表
+        })
+    },
+
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
