@@ -1,0 +1,30 @@
+/* pages/movies/movieList-template/movieList-template.wxss */
+@import "/pages/movies/amovie-template/amovie-template.wxss";
+.movieList-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.movieList-container .movieList-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10rpx;
+}
+
+.movieList-container .movieList-head .movieList-head-l{
+    font-size: 24rpx;
+    margin-left: 20rpx;
+}
+
+.movieList-container .movieList-head .movieList-head-r image{
+    height: 20rpx;
+    width: 20rpx;
+    margin: 0 20rpx;
+}
+
+.movieList-container .movieList-amovie{
+    display: flex;
+    flex-direction: row;
+}

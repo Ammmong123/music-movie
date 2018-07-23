@@ -1,0 +1,11 @@
+<!--pages/movies/star-template/star-template.wxml-->
+
+<template name='starTemplate'>
+    <view class='star-container'>
+        <block wx:for='{{star}}'>
+         <image wx:if='{{item==1}}' src='/images/icon/star.png '></image>
+          <image wx:else src='/images/icon/none-star.png '></image>
+        </block>
+        <text>{{average}}</text>
+    </view>
+</template>

@@ -1,0 +1,32 @@
+<!--pages/movies/movie.wxml-->
+<import src='/pages/movies/movieList-template/movieList-template.wxml' />
+<import src='/pages/movies/amovie-template/amovie-template.wxml' />
+<view class='container'>
+    <view class='search'>
+        <icon class='search-icon' type='search' size='22' color='#405f80'></icon>
+        <input value='{{inputValue}}' type='text' placeholder='阿飞正传' placeholder-class='placeholder' bindfocus='onFocus' bindblur='onBlur' bindconfirm='onConfirm'></input>
+        <icon class='cancelImg' catchtap='onCancel' type='cancel' size='25' color='#405f80'></icon>
+    </view>
+    <block wx:if='{{movieStatus}}'>
+        <view class='movie-container'>
+            <template is='movieListTemplate' data='{{...inTheaters}}' />
+        </view>
+        <view class='movie-container'>
+            <template is='movieListTemplate' data='{{...comingSoon}}' />
+        </view>
+        <view class='movie-container'>
+            <template is='movieListTemplate' data='{{...top250}}' />
+        </view>
+    </block>
+    <block wx:else>
+        <view class='moremovie-container'>
+            <block wx:for='{{searchResult.movie}}' wx:for-item='amovie'>
+                <view class='search-list'>
+                    <template is='amovieTemplate' data='{{...amovie}}' />
+                </view>
+
+            </block>
+        </view>
+    </block>
+
+</view>

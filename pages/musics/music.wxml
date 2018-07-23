@@ -1,0 +1,22 @@
+<!--pages/music/music.wxml-->
+<import src='music-item/music-template.wxml'/>
+<view>
+    <swiper indicator-dots='true' autoplay='true' interval='3000'>
+        <swiper-item>
+            <image src='{{musicKey[2].headImgSrc}}'></image>
+        </swiper-item>
+        <swiper-item>
+        <image src='{{musicKey[5].headImgSrc}}'></image>
+        </swiper-item>
+        <swiper-item>
+            <image src='{{musicKey[0].headImgSrc}}'></image>
+        </swiper-item>
+    </swiper>
+
+    <block wx:for='{{musicKey}}' wx-item='item' wx-index='idx'>
+        <view catchtap='musicTap' data-musicId='{{item.musicId}}'>
+            <!-- 模版组件 -->
+            <template is='musicContent' data='{{item}}' />
+        </view>
+    </block>
+</view>

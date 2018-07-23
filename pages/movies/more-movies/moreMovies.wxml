@@ -1,0 +1,7 @@
+<!--pages/movies/more-movies/moreMovies.wxml-->
+<import src='/pages/movies/amovie-template/amovie-template.wxml' />
+<view class='moremovie-container'>
+    <block wx:for='{{movie}}' wx:for-item='amovie'>
+            <template is='amovieTemplate' data='{{...amovie}}' />
+    </block>
+</view>

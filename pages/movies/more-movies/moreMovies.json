@@ -1,0 +1,10 @@
+{
+    "window": {
+        "navigationBarTitleText": "MOVIE",
+        "enablePullDownRefresh":true,
+        "onReachBottomDistance": 60
+    },
+    "enablePullDownRefresh": true,
+    
+    "onReachBottomDistance":60
+}

@@ -1,0 +1,10 @@
+/* pages/movies/more-movies/moreMovies.wxss */
+@import "/pages/movies/amovie-template/amovie-template.wxss";
+.moremovie-container{
+    padding: 0 30rpx;
+}
+
+.amovie-container{
+    padding: 30rpx 15rpx 30rpx 15rpx;
+    float: left;
+}

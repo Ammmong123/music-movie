@@ -1,0 +1,18 @@
+/* pages/movies/amovie-template/amovie-template.wxss */
+@import "/pages/movies/star-template/star-template.wxss";
+.amovie-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 22rpx;
+}
+
+.amovie-container .amovie-img{
+    width: 200rpx;
+    height: 270rpx;
+    padding-bottom: 20rpx;
+}
+
+.amovie-container .amovie-title{
+    font-size: 24rpx;
+    margin-bottom: 15rpx;
+}

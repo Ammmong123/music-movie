@@ -1,0 +1,9 @@
+<!--pages/movies/amovie-template/amovie-template.wxml-->
+<import src='/pages/movies/star-template/star-template.wxml' />
+<template name='amovieTemplate'>
+    <view class='amovie-container' catchtap='onMovieDetail' data-movieId='{{movieId}}'>
+        <image class='amovie-img' src='{{coverageUrl}}'></image>
+        <text class='amovie-title'>{{title}}</text>
+        <template is='starTemplate' data='{{average:average,star:star}}' />
+    </view>
+</template>

@@ -1,0 +1,20 @@
+<!--pages/movies/movieList-template/movieList-template.wxml-->
+<import src='/pages/movies/amovie-template/amovie-template.wxml' />
+<template name='movieListTemplate'>
+    <view class='movieList-container'>
+        <view class='movieList-head'>
+            <text class='movieList-head-l'>{{headTitle}}</text>
+            <view catchtap='moreMovies' data-movietype='{{headTitle}}' class='movieList-head-r'>
+                <text>更多</text>
+                <image src='/images/icon/arrow-right.png'></image>
+            </view>
+        </view>
+        <view class='movieList-amovie'>
+            <block wx:for='{{movie}}' wx:for-item='amovie'>
+                <template is='amovieTemplate' data='{{...amovie}}' />
+            </block>
+
+        </view>
+
+    </view>
+</template>

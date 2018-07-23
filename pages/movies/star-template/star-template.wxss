@@ -1,0 +1,17 @@
+/* pages/movies/star-template/star-template.wxss */
+.star-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.star-container image{
+    height: 17rpx;
+    width: 17rpx;
+    padding-left: 3rpx;
+}
+.star-container text{
+    color: black;
+    margin-left: 24rpx;
+    font-size: 17rpx;
+}
